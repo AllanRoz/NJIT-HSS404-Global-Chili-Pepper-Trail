@@ -1,0 +1,17 @@
+.chili-marker {
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  background-image: none !important; /* <-- THIS IS THE FIX */
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  z-index: 9999 !important;
+}
+
+.chili-marker:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 12px rgba(255, 60, 60, 1);
+}

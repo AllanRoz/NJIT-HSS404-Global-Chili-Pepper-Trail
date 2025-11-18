@@ -1,37 +1,130 @@
-// App.jsx
-import React from "react";
-import { AppBar, Toolbar, Typography, Container, Paper } from "@mui/material";
+import React, { useState } from "react";
+import { AppBar, Toolbar, Typography, Box, Button, Paper } from "@mui/material";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import ChilliMap from "./ChilliMap";
 import { FixLeafletIcons } from "./leafletFix";
+import ReferencesPage from "./pages/ReferencesPage";
 
 FixLeafletIcons();
 
+function HomePage() {
+  const [selectedRegion, setSelectedRegion] = useState(null);
+
+  return (
+    <Box sx={{ display: "flex", height: "100vh" }}>
+      {/* Left Side - Map */}
+      <Box sx={{ width: "65%", height: "100%" }}>
+        <ChilliMap onRegionSelect={setSelectedRegion} />
+      </Box>
+
+      {/* Right Side - Information */}
+      <Paper
+        elevation={4}
+        sx={{
+          width: "35%",
+          p: 3,
+          borderRadius: 0,
+          color: "white",
+          overflowY: "auto",
+          borderLeft: "2px solid #ddd",
+          backgroundColor: "#242424",
+        }}
+      >
+        {!selectedRegion ? (
+          <Typography variant="h6" color="white">
+            Click a region on the map to learn about its chili history.
+          </Typography>
+        ) : (
+          <>
+            <Typography
+              variant="h4"
+              sx={{ mb: 2, color: "red", fontWeight: "bold" }}
+            >
+              {selectedRegion.region}{" "}
+              {
+                <span
+                  className={`fi fi-${selectedRegion.flagCode}`}
+                  style={{
+                    fontSize: "48px",
+                    display: "inline-block",
+                    paddingBottom: "10px",
+                    borderRadius: "4px",
+                  }}
+                ></span>
+              }
+            </Typography>
+
+            <Typography variant="subtitle1">
+              <strong>Arrival:</strong> {selectedRegion.arrival}
+            </Typography>
+
+            {/* Chili Image */}
+            <img
+              src={selectedRegion.chiliImage}
+              alt="Chili Type"
+              style={{
+                width: "100%",
+                borderRadius: "12px",
+                marginBottom: "12px",
+              }}
+            />
+
+            <Typography variant="body1" sx={{ mt: 2 }}>
+              <strong>Cultural Impact:</strong> {selectedRegion.culturalImpact}
+            </Typography>
+
+            <Typography
+              variant="h6"
+              sx={{ mt: 3, fontWeight: "bold", color: "lightblue" }}
+            >
+              🍽 Iconic Dish: {selectedRegion.dish}
+            </Typography>
+
+            {/* Iconic Dish Image */}
+            <img
+              src={selectedRegion.dishImage}
+              alt="Iconic Dish"
+              style={{ width: "100%", borderRadius: "12px", marginTop: "10px" }}
+            />
+          </>
+        )}
+      </Paper>
+    </Box>
+  );
+}
+
 export default function App() {
   return (
-    <div>
-      <AppBar position="static">
-        <Toolbar disableGutters sx={{ px: 2 }}>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            🌶️ Global Chilli Trail
-          </Typography>
-        </Toolbar>
-      </AppBar>
+    <BrowserRouter>
+      {/* Navbar */}
+      <Navbar />
 
-      <Container maxWidth="md" sx={{ mt: 4 }}>
-        <Paper sx={{ p: 3, borderRadius: "12px" }} elevation={3}>
-          <Typography variant="h4" gutterBottom>
-            Global Chilli Trail Project
-          </Typography>
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/references" element={<ReferencesPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-          <Typography variant="body1" sx={{ mt: 2 }}>
-            This project explores how chili peppers spread around the world,
-            their cultural impact, and iconic regional dishes. Click a marker on
-            the map to learn about each region’s chili history.
-          </Typography>
-        </Paper>
+function Navbar() {
+  const navigate = useNavigate();
 
-        <ChilliMap />
-      </Container>
-    </div>
+  return (
+    <AppBar position="static">
+      <Toolbar disableGutters sx={{ px: 2 }}>
+        <Typography
+          variant="h6"
+          sx={{ flexGrow: 1, cursor: "pointer" }}
+          onClick={() => navigate("/")}
+        >
+          🌶️ Global Chilli Trail
+        </Typography>
+        <Button color="inherit" onClick={() => navigate("/references")}>
+          References
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
 }
