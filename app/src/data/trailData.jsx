@@ -3,8 +3,10 @@ export const trailData = [
     id: 1,
     lat: 19.43,
     lng: -99.13,
-    region: "Mesoamerica (Origin)",
+    region: "Mesoamerica",
     arrival: "7500 BC",
+    cameFrom:
+      "Native origin — this is the birthplace of all domesticated chilies.",
     culturalImpact:
       "Birthplace of all domesticated chili pepper species. Ancient civilizations cultivated multiple Capsicum types.",
     dish: "Mole",
@@ -18,6 +20,7 @@ export const trailData = [
     lng: 100.5,
     region: "Thailand",
     arrival: "16th–17th Century",
+    cameFrom: "Arrived from Portuguese traders sailing from India and Malacca.",
     culturalImpact:
       "Chilies reshaped Thai cuisine and became central to nearly all regional dishes.",
     dish: "Tom Yum",
@@ -29,8 +32,10 @@ export const trailData = [
     id: 3,
     lat: 21.0,
     lng: 78.0,
-    region: "India (South Asia)",
+    region: "India",
     arrival: "Late 1400s–1500s",
+    cameFrom:
+      "Introduced by Portuguese explorers who brought chilies from Brazil.",
     culturalImpact:
       "India rapidly adopted chilies into curries and masalas, becoming the world’s largest chili producer.",
     dish: "Vindaloo",
@@ -42,8 +47,10 @@ export const trailData = [
     id: 4,
     lat: 30.6,
     lng: 104.0,
-    region: "Sichuan, China",
+    region: "China",
     arrival: "1600s",
+    cameFrom:
+      "Likely introduced via Silk Road merchants and Portuguese trade routes.",
     culturalImpact:
       "The iconic mala flavor of Sichuan cuisine is defined by chilies and Sichuan peppercorn.",
     dish: "Mapo Tofu",
@@ -55,13 +62,14 @@ export const trailData = [
     id: 5,
     lat: 39.9,
     lng: 32.8,
-    region: "Ottoman Empire / Middle East",
+    region: "Middle East",
     arrival: "1500s",
+    cameFrom: "Arrived from Spain and Portugal through Mediterranean trade.",
     culturalImpact:
       "Chilies entered through trade routes and became staples in Levantine and Anatolian cooking.",
     dish: "Muhammara",
     chiliImage: "/images/chilies/middleeast.jpg",
-    dishImage: "/images/dishes/muhammara.jpg",
+    dishImage: "/images/dishes/shawarma.jpg",
     flagCode: "tr",
   },
   {
@@ -70,6 +78,7 @@ export const trailData = [
     lng: -9.1,
     region: "Portugal",
     arrival: "1490s",
+    cameFrom: "Directly brought from the New World by Portuguese explorers.",
     culturalImpact:
       "Portugal distributed chilies globally via maritime trade, spreading them to Africa and Asia.",
     dish: "Piri Piri Chicken",
@@ -83,6 +92,7 @@ export const trailData = [
     lng: -3.7,
     region: "Spain",
     arrival: "1493",
+    cameFrom: "Christopher Columbus returned with chilies from the Caribbean.",
     culturalImpact:
       "Spain was the first European nation to receive chilies from the New World and spread them across Europe.",
     dish: "Patatas Bravas",
@@ -96,11 +106,12 @@ export const trailData = [
     lng: -1.0,
     region: "West Africa",
     arrival: "1500s",
+    cameFrom: "Brought by Portuguese traders along the West African coast.",
     culturalImpact:
       "Chilies thrived in African climates, becoming essential to local soups, stews, and sauces.",
     dish: "Pepper Soup",
     chiliImage: "/images/chilies/african-pepper.jpg",
-    dishImage: "/images/dishes/peppersoup.jpg",
+    dishImage: "/images/dishes/jollofrice.jpg",
     flagCode: "gh",
   },
   {
@@ -109,6 +120,7 @@ export const trailData = [
     lng: 38.7,
     region: "Ethiopia",
     arrival: "1600s",
+    cameFrom: "Introduced through Red Sea trade and Ottoman influence.",
     culturalImpact:
       "Chilies became key in the berbere spice blend that defines Ethiopian cuisine.",
     dish: "Doro Wat",
@@ -122,11 +134,13 @@ export const trailData = [
     lng: 127.9,
     region: "Korea",
     arrival: "1592–1598",
+    cameFrom:
+      "Likely introduced by Japanese or Portuguese trade during the Imjin War.",
     culturalImpact:
       "Chilies transformed kimchi and Korean cuisine, giving rise to gochugaru peppers.",
     dish: "Kimchi",
     chiliImage: "/images/chilies/gochugaru.jpg",
-    dishImage: "/images/dishes/kimchi.jpg",
+    dishImage: "/images/dishes/kimchijjigae.jpg",
     flagCode: "kr",
   },
   {
@@ -135,19 +149,21 @@ export const trailData = [
     lng: 139.7,
     region: "Japan",
     arrival: "Late 1500s",
+    cameFrom: "Introduced via Portuguese missionaries and traders.",
     culturalImpact:
       "Japan integrated chilies into shichimi togarashi and regional pickles.",
     dish: "Shichimi Udon",
     chiliImage: "/images/chilies/togarashi.jpg",
-    dishImage: "/images/dishes/shichimiudon.jpg",
+    dishImage: "/images/dishes/katsucurry.jpg",
     flagCode: "jp",
   },
   {
     id: 12,
     lat: 38.9,
     lng: 16.6,
-    region: "Calabria, Italy",
+    region: "Italy",
     arrival: "1500s",
+    cameFrom: "Spread from Spain across the Mediterranean.",
     culturalImpact:
       "Calabria became the Italian capital of chili culture; 'peperoncino' defines local identity.",
     dish: "Nduja",
@@ -161,6 +177,8 @@ export const trailData = [
     lng: -77.3,
     region: "Caribbean",
     arrival: "Pre-Columbian",
+    cameFrom:
+      "Native origin — chilies evolved here independently alongside Mesoamerica.",
     culturalImpact:
       "Home of the scotch bonnet pepper — crucial in jerk seasoning and Caribbean spice blends.",
     dish: "Jerk Chicken",
@@ -174,11 +192,12 @@ export const trailData = [
     lng: -77.0,
     region: "Peru",
     arrival: "Native",
+    cameFrom: "Native origin — domesticated independently in the Andes.",
     culturalImpact:
       "Aji amarillo peppers are ancient and fundamental to Peruvian identity.",
     dish: "Aji de Gallina",
     chiliImage: "/images/chilies/ajiamarillo.jpg",
-    dishImage: "/images/dishes/ajidegallina.jpg",
+    dishImage: "/images/dishes/ceviche.jpg",
     flagCode: "pe",
   },
   {
@@ -187,11 +206,13 @@ export const trailData = [
     lng: 19.5,
     region: "Hungary",
     arrival: "1500s–1600s",
+    cameFrom:
+      "Arrived via the Ottoman Empire bringing chilies from the Middle East.",
     culturalImpact:
       "Hungary developed paprika culture, with sweet, hot, and smoky variations.",
     dish: "Chicken Paprikash",
     chiliImage: "/images/chilies/paprika.jpg",
-    dishImage: "/images/dishes/paprikash.jpg",
+    dishImage: "/images/dishes/goulash.jpg",
     flagCode: "hu",
   },
   {
@@ -200,6 +221,8 @@ export const trailData = [
     lng: -7.1,
     region: "Morocco",
     arrival: "1500s",
+    cameFrom:
+      "Introduced through trade routes from Iberia and the Ottoman world.",
     culturalImpact:
       "Chilies helped create harissa, one of North Africa’s most famous chili pastes.",
     dish: "Harissa Tagine",
@@ -213,6 +236,7 @@ export const trailData = [
     lng: -58.4,
     region: "Argentina",
     arrival: "1700s",
+    cameFrom: "Brought from Peru and Bolivia via South American trade routes.",
     culturalImpact:
       "Chilies contributed to chimichurri’s evolution into a national condiment.",
     dish: "Chimichurri Steak",
@@ -226,11 +250,13 @@ export const trailData = [
     lng: 7.4,
     region: "Nigeria",
     arrival: "1500s",
+    cameFrom:
+      "Transported by Portuguese traders along West Africa's coastline.",
     culturalImpact:
       "Nigeria’s shito and pepper stews rely heavily on strong chili varieties.",
     dish: "Shito",
     chiliImage: "/images/chilies/nigerian.jpg",
-    dishImage: "/images/dishes/shito.jpg",
+    dishImage: "/images/dishes/suya.jpg",
     flagCode: "ng",
   },
   {
@@ -239,6 +265,8 @@ export const trailData = [
     lng: 121.0,
     region: "Philippines",
     arrival: "1500s",
+    cameFrom:
+      "Spread by Spanish colonizers via Mexico through the Manila–Acapulco galleon trade.",
     culturalImpact:
       "The siling labuyo chili became native to Filipino dishes and sauces.",
     dish: "Bicol Express",
@@ -252,11 +280,12 @@ export const trailData = [
     lng: -70.6,
     region: "Chile",
     arrival: "Native",
+    cameFrom: "Native origin — cultivated by the Mapuche people.",
     culturalImpact:
       "The Mapuche people cultivated ‘merken,’ a smoky chili seasoning.",
     dish: "Merken Chicken",
     chiliImage: "/images/chilies/merken.jpg",
-    dishImage: "/images/dishes/merkenchicken.jpg",
+    dishImage: "/images/dishes/cazuela.jpg",
     flagCode: "cl",
   },
   {
@@ -265,11 +294,13 @@ export const trailData = [
     lng: 106.8,
     region: "Indonesia",
     arrival: "1500s",
+    cameFrom:
+      "Introduced by Portuguese traders via the Indian Ocean spice network.",
     culturalImpact:
       "Indonesia developed sambal — one of the world’s most diverse chili condiments.",
     dish: "Sambal",
     chiliImage: "/images/chilies/sambal.jpg",
-    dishImage: "/images/dishes/sambal.jpg",
+    dishImage: "/images/dishes/rendang.jpg",
     flagCode: "id",
   },
 ];

@@ -1,7 +1,9 @@
-import React from "react";
+// src/pages/HistoryPage.jsx
+import React, { useEffect } from "react";
 import {
   Container,
   Grid,
+  Box,
   Card,
   CardContent,
   Typography,
@@ -17,11 +19,19 @@ import {
 } from "lucide-react";
 
 export default function HistoryPage() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
-    <div
+    <Box
       style={{
         backgroundColor: "#242424",
-        minHeight: "100vh",
+        height: "calc(100vh - 64px)",
+        overflowY: "auto",
         padding: "40px 0",
       }}
     >
@@ -265,6 +275,6 @@ export default function HistoryPage() {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </Box>
   );
 }

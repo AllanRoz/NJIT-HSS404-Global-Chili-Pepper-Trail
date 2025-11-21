@@ -1,5 +1,5 @@
 // ReferencesPage.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Typography, Paper, Divider, Link } from "@mui/material";
 
 export default function ReferencesPage() {

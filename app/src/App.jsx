@@ -5,7 +5,7 @@ import ChilliMap from "./ChilliMap";
 import { FixLeafletIcons } from "./leafletFix";
 import ReferencesPage from "./pages/ReferencesPage";
 import HistoryPage from "./pages/HistoryPage";
-import ChiliImageBox from "./components/ChiliImageBox";
+import ImageBox from "./components/ImageBox";
 
 FixLeafletIcons();
 
@@ -13,7 +13,7 @@ function HomePage() {
   const [selectedRegion, setSelectedRegion] = useState(null);
 
   return (
-    <Box sx={{ display: "flex", height: "100vh" }}>
+    <Box sx={{ display: "flex", height: "calc(100vh - 64px)" }}>
       {/* Left Side - Map */}
       <Box sx={{ width: "65%", height: "100%" }}>
         <ChilliMap onRegionSelect={setSelectedRegion} />
@@ -34,7 +34,8 @@ function HomePage() {
       >
         {!selectedRegion ? (
           <Typography variant="h6" color="white">
-            Click a region on the map to learn about its chili history.
+            Click a region on the map to learn about its chili history and
+            iconic dish.
           </Typography>
         ) : (
           <>
@@ -60,8 +61,12 @@ function HomePage() {
               <strong>Arrival:</strong> {selectedRegion.arrival}
             </Typography>
 
+            <Typography variant="subtitle1" sx={{ mt: 1 }}>
+              <strong>Came From:</strong> {selectedRegion.cameFrom}
+            </Typography>
+
             {/* Chili Image */}
-            <ChiliImageBox
+            <ImageBox
               name={selectedRegion.region + " Chili"}
               image={selectedRegion.chiliImage}
             />
@@ -78,10 +83,9 @@ function HomePage() {
             </Typography>
 
             {/* Iconic Dish Image */}
-            <img
-              src={selectedRegion.dishImage}
-              alt="Iconic Dish"
-              style={{ width: "100%", borderRadius: "12px", marginTop: "10px" }}
+            <ImageBox
+              name={selectedRegion.region + " Chili"}
+              image={selectedRegion.dishImage}
             />
           </>
         )}

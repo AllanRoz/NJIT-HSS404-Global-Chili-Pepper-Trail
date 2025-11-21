@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-export default function ChiliImageBox({ name, image }) {
+export default function DishImageBox({ name, image }) {
   return (
     <Box
       sx={{
