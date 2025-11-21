@@ -49,11 +49,12 @@ function ChiliTradeRoutes({ points }) {
 export default function ChilliMap({ onRegionSelect }) {
   const center = [20, 0];
 
-  const createMarkerIcon = () =>
+  const createMarkerIcon = (flagCode) =>
     L.divIcon({
       className: "chili-marker",
-      iconSize: [16, 16],
-      iconAnchor: [8, 8],
+      html: `<span class="fi fi-${flagCode}" style="font-size:20px;"></span>`,
+      iconSize: [1, 1],
+      iconAnchor: [12, 12],
     });
 
   return (
@@ -71,7 +72,7 @@ export default function ChilliMap({ onRegionSelect }) {
         <Marker
           key={point.id}
           position={[point.lat, point.lng]}
-          icon={createMarkerIcon()}
+          icon={createMarkerIcon(point.flagCode)}
           eventHandlers={{
             click: () => onRegionSelect(point),
           }}

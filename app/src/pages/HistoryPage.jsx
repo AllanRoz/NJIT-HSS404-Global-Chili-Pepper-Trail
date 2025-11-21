@@ -1,4 +1,3 @@
-// src/pages/HistoryPage.jsx
 import React, { useEffect } from "react";
 import {
   Container,
@@ -34,7 +33,6 @@ export default function HistoryPage() {
       }}
     >
       <Container maxWidth="lg">
-        {/* Page Title */}
         <Typography
           variant="h3"
           align="center"
@@ -44,7 +42,7 @@ export default function HistoryPage() {
             mb: 2,
           }}
         >
-          🌶️ The History of Chillies
+          The History of Chillies
         </Typography>
 
         <Typography
@@ -60,9 +58,7 @@ export default function HistoryPage() {
           culture, cuisine, and global trade for thousands of years.
         </Typography>
 
-        {/* Content Grid */}
         <Grid container spacing={4}>
-          {/* ORIGINS */}
           <Grid item xs={12} md={6}>
             <Card
               sx={{
@@ -96,7 +92,6 @@ export default function HistoryPage() {
             </Card>
           </Grid>
 
-          {/* COLORS */}
           <Grid item xs={12} md={6}>
             <Card
               sx={{
@@ -133,7 +128,6 @@ export default function HistoryPage() {
             </Card>
           </Grid>
 
-          {/* NAMES */}
           <Grid item xs={12} md={6}>
             <Card
               sx={{
@@ -167,7 +161,6 @@ export default function HistoryPage() {
             </Card>
           </Grid>
 
-          {/* SPICE LEVEL */}
           <Grid item xs={12} md={6}>
             <Card
               sx={{
@@ -200,7 +193,6 @@ export default function HistoryPage() {
             </Card>
           </Grid>
 
-          {/* DRIED VS FRESH */}
           <Grid item xs={12} md={6}>
             <Card
               sx={{
@@ -235,7 +227,6 @@ export default function HistoryPage() {
             </Card>
           </Grid>
 
-          {/* EVOLUTION */}
           <Grid item xs={12} md={6}>
             <Card
               sx={{

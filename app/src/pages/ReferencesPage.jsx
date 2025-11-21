@@ -1,6 +1,5 @@
-// ReferencesPage.jsx
 import React, { useEffect } from "react";
-import { Box, Typography, Paper, Divider, Link } from "@mui/material";
+import { Box, Typography, Divider, Link } from "@mui/material";
 
 export default function ReferencesPage() {
   useEffect(() => {
@@ -19,127 +18,107 @@ export default function ReferencesPage() {
         backgroundColor: "#242424",
       }}
     >
-      <Paper sx={{ p: 4, maxWidth: "900px", mx: "auto" }} elevation={3}>
-        <Typography variant="h3" sx={{ mb: 3, fontWeight: "bold" }}>
-          📚 Works Cited
-        </Typography>
-
-        {/* 1. History Cooperative */}
-        <Typography variant="h5">1. Origin of Chili Peppers</Typography>
-        <Link
-          href="https://historycooperative.org/origin-of-chili/"
-          target="_blank"
+      <Box sx={{ p: 4, maxWidth: "700px", mx: "auto" }} elevation={3}>
+        <Typography
+          variant="h3"
+          align="center"
+          sx={{ mb: 3, fontWeight: "bold" }}
         >
-          History Cooperative – Origin of Chili
-        </Link>
-        <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          “Origin of Chili.” <i>History Cooperative</i>,
-          historycooperative.org/origin-of-chili/.
+          Works Cited
         </Typography>
 
-        <Divider sx={{ my: 3 }} />
-
-        {/* 2. Legal Nomads */}
-        <Typography variant="h5">2. Spread of Chilies Globally</Typography>
-        <Link
-          href="https://www.legalnomads.com/history-chili-peppers/"
-          target="_blank"
-        >
-          Legal Nomads – History of Chili Peppers
-        </Link>
-        <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          Lee, Jodi Ettenberg. “A Brief History of Chili Peppers.”{" "}
-          <i>Legal Nomads</i>, www.legalnomads.com/history-chili-peppers/.
-        </Typography>
-
-        <Divider sx={{ my: 3 }} />
-
-        {/* 3. SpiceMad */}
-        <Typography variant="h5">3. Chili Spread via Spice Routes</Typography>
-        <Link
-          href="http://www.spicemad.com/p/the-history-of-chilli-peppers.html"
-          target="_blank"
-        >
-          SpiceMad – The History of Chilli Peppers
-        </Link>
-        <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          “The History of Chilli Peppers.” <i>SpiceMad</i>,
-          spicemad.com/p/the-history-of-chilli-peppers.html. 2025.
-        </Typography>
-
-        <Divider sx={{ my: 3 }} />
-
-        {/* 4. Bangkok Post */}
         <Typography variant="h5">
-          4. Portuguese Distribution of Chilies
+          1. Origin of Chili Peppers - History Cooperative
         </Typography>
-        <Link
-          href="https://www.bangkokpost.com/life/social-and-lifestyle/1672304/chillis-complicated-history"
-          target="_blank"
-        >
-          Bangkok Post – Chili’s Complicated History
-        </Link>
         <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          “Chilli’s Complicated History.” <i>Bangkok Post</i>,
-          www.bangkokpost.com/life/social-and-lifestyle/1672304/chillis-complicated-history.
+          Maup van de Kerkhof, "Origin of Chili: Does Chili Come from Ancient
+          Mesoamerica?", History Cooperative, August 8, 2023,{" "}
+          <Link
+            href="https://historycooperative.org/origin-of-chili/"
+            target="_blank"
+          >
+            https://historycooperative.org/origin-of-chili/
+          </Link>
+        </Typography>
+
+        <Divider sx={{ my: 3 }} />
+
+        <Typography variant="h5">
+          2. A Brief History of Chili Peppers - LEGAL NOMADS
+        </Typography>
+        <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
+          Ettenberg, Jodi. “A Brief History of Chili Peppers.” Legal Nomads,
+          October 1, 2025,{" "}
+          <Link
+            href="https://www.legalnomads.com/history-chili-peppers/"
+            target="_blank"
+          >
+            https://www.legalnomads.com/history-chili-peppers/
+          </Link>
+        </Typography>
+
+        <Divider sx={{ my: 3 }} />
+
+        <Typography variant="h5">
+          3. Chilli's Complicated history - Bangkok Post
+        </Typography>
+        <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
+          Sukphist, Suthon. “Chilli’s Complicated History.”, Bangkok Post, 5 May
+          2019,
         </Typography>
 
         <Divider sx={{ my: 4 }} />
 
-        <Typography variant="h5">5. Smithsonian – Chili Origins</Typography>
-        <Link href="https://www.smithsonianmag.com/" target="_blank">
-          Smithsonian Magazine – History of Chilies
-        </Link>
+        <Typography variant="h5">
+          4. The Medieval Spice Trade and the Diffusion of the Chile - JSTOR
+        </Typography>
         <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          “The History of Chili Peppers.” <i>Smithsonian Magazine</i>,
-          www.smithsonianmag.com/.
+          Wright, Clifford a. “The Medieval Spice Trade and the Diffusion of the
+          Chile.” Gastronomica, vol. 7, no. 2, 2007, pp. 35–43. JSTOR,{" "}
+          <Link href="https://doi.org/10.1525/gfc.2007.7.2.35" target="_blank">
+            https://doi.org/10.1525/gfc.2007.7.2.35
+          </Link>
         </Typography>
 
         <Divider sx={{ my: 3 }} />
 
-        <Typography variant="h5">6. Thai Adoption of Chili Peppers</Typography>
-        <Link
-          href="https://www.bbc.com/travel/article/20200220-how-chillies-changed-thai-food"
-          target="_blank"
-        >
-          BBC Travel – How Chillies Changed Thai Cuisine
-        </Link>
+        <Typography variant="h5">5. THE SPICE TRADE - JSTOR</Typography>
         <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          Ho, Elaine. “How Chillies Changed Thai Food.” <i>BBC Travel</i>, 20
-          Feb. 2020,
-          www.bbc.com/travel/article/20200220-how-chillies-changed-thai-food.
+          STONE, B. G. “THE SPICE TRADE.” Journal of the Royal Society of Arts,
+          vol. 112, no. 5097, 1964, pp. 703–13. JSTOR,{" "}
+          <Link href="http://www.jstor.org/stable/41367670" target="_blank">
+            http://www.jstor.org/stable/41367670
+          </Link>
         </Typography>
 
         <Divider sx={{ my: 3 }} />
 
-        <Typography variant="h5">7. History of Mole</Typography>
-        <Link
-          href="https://mexiconewsdaily.com/lifestyle/history-of-mole/"
-          target="_blank"
-        >
-          Mexico News Daily – History of Mole
-        </Link>
+        <Typography variant="h5">
+          6. Origin of Domesticated Chili Pepper - JSTOR
+        </Typography>
         <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          “The History of Mole.” <i>Mexico News Daily</i>,
-          mexiconewsdaily.com/lifestyle/history-of-mole/.
+          Kraft, Kraig H., et al. “Multiple Lines of Evidence for the Origin of
+          Domesticated Chili Pepper, Capsicum Annuum, in Mexico.” Proceedings of
+          the National Academy of Sciences of the United States of America, vol.
+          111, no. 17, 2014, pp. 6165–70. JSTOR,{" "}
+          <Link href="http://www.jstor.org/stable/23772471" target="_blank">
+            http://www.jstor.org/stable/23772471
+          </Link>
         </Typography>
 
         <Divider sx={{ my: 3 }} />
 
-        <Typography variant="h5">8. Bird’s Eye Chili (Thailand)</Typography>
-        <Link
-          href="https://www.chilipeppermadness.com/chili-pepper-types/medium-hot-chili-peppers/thai-peppers/"
-          target="_blank"
-        >
-          Chili Pepper Madness – Thai Peppers
-        </Link>
+        <Typography variant="h5">7. Capsicum Pepper Origin -JSTOR</Typography>
         <Typography variant="body2" sx={{ mt: 1, ml: 2 }}>
-          “Thai Peppers.” <i>Chili Pepper Madness</i>,
-          www.chilipeppermadness.com/chili-pepper-types/medium-hot-chili-peppers/thai-peppers/.
+          Nunn, Nathan, and Nancy Qian. “The Columbian Exchange: A History of
+          Disease, Food, and Ideas.” The Journal of Economic Perspectives, vol.
+          24, no. 2, 2010, pp. 163–88. JSTOR,{" "}
+          <Link href="http://www.jstor.org/stable/25703506" target="_blank">
+            http://www.jstor.org/stable/25703506
+          </Link>
         </Typography>
-
         <Divider sx={{ mt: 4 }} />
-      </Paper>
+      </Box>
     </Box>
   );
 }
