@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://allanroz.github.io/NJIT-HSS404-Global-Chili-Pepper-Trail/)
+[![Product Name Screen Shot][product-screenshot]](https://allanroz.github.io/NJIT-HSS404-Global-Chili-Pepper-Trail)
 
 A interactive map with points of interest around the world that you can click on and see a popular chili pepper of that country or region of the world. While also displaying a spicy iconic dish of said country or region.
 
@@ -110,6 +110,7 @@ How to get this project installed and running a local copy on your machine.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+<!--
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -117,6 +118,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+-->
 
 <!-- LICENSE -->
 ## License
@@ -143,7 +145,7 @@ Project Link: [https://github.com/AllanRoz/NJIT-HSS404-Global-Chili-Pepper-Trail
 [product-screenshot]: app/public/main_screen.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[Vite.dev]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
 [Vite-url]: https://vite.dev/
-[MUI]: https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white
+[MUI.com]: https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white
 [MUI-url]: https://mui.com/
