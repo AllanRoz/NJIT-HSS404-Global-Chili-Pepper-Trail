@@ -1,5 +1,7 @@
 # NJIT-HSS404-Global-Chili-Trail
 
+<a id="readme-top"></a>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
