@@ -54,12 +54,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://allanroz.github.io/NJIT-HSS404-Global-Chili-Pepper-Trail)
 
-A interactive map with points of interest around the world that you can click on and see a popular chili pepper of that country or region of the world. While also displaying a spicy iconic dish of said country or region.
+An interactive map with points of interest around the world that you can click on and see a popular chili pepper of that country or region of the world. While also displaying a spicy iconic dish of said country or region.
 
 Reasons why I made this:
-* Needed to make a final research project NJIT HSS-404 class. 
-* My options were 10-12 page paper, 12-15 minute podecast, 12-15 minute video, or a multimedia project, about food.
-* I decided to do a multimedia project and chose to do a React app about the chili pepper trails around the world .
+* Needed to make a final research project for NJIT HSS-404 class. 
+* My options were a 10-12 page paper, a 12-15 minute podcast, a 12-15 minute video, or a multimedia project about food.
+* I decided to do a multimedia project and chose to do a React app about the chili pepper trails around the world.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,16 +85,16 @@ How to get this project installed and running a local copy on your machine.
   npm install npm@latest -g
   ```
 
-### Installation and running React app locally
+### Installation and running a React app locally
 1. Clone the repo
    ```sh
    git clone https://github.com/AllanRoz/NJIT-HSS404-Global-Chili-Pepper-Trail.git
    ```
-2. Change into project directory
+2. Change into the project directory
    ```sh
    cd NJIT-HSS404-Global-Chili-Pepper-Trail
    ```
-3. Change into app directory
+3. Change into the app directory
    ```sh
    cd app
    ```
