@@ -14,8 +14,6 @@
   <p align="center">
     A React app about chili peppers and iconic dishes around the world.
     <br />
-    <a href="https://github.com/AllanRoz/NJIT-HSS404-Global-Chili-Pepper-Trail"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://allanroz.github.io/NJIT-HSS404-Global-Chili-Pepper-Trail/">View Demo</a>
     &middot;
